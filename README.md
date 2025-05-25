@@ -1,4 +1,21 @@
-Avatar-HQ
-=========
+# Avatar-HQ
 
-AvatarHQ is a lightweight dataset comprising three directories: `avatar/`, containing 200 hand-drawn PNG portraits at 1024 × 1024 resolution; `realistic/`, holding the identity-matched CelebA-HQ reference photographs; and `text/`, supplying concise English descriptions in plain-text files that share filename stems with the images (for example, 0001.png and 0001.txt). The collection is released for non-commercial research under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0), while any auxiliary code in this repository is MIT-licensed—using the data implies acceptance of the CC terms, and commercial use requires written permission from the authors. If AvatarHQ supports your work, please cite it as “Sui, Linjie and Prasad, Mukesh. *AvatarHQ: A High-Quality Hand-Drawn Avatar Dataset*, 2025, CC BY-NC-SA 4.0, https://github.com/〈user〉/AvatarHQ”. Direct questions, issues or collaboration proposals to Linjie Sui (linjie.sui-1@uts.edu.au) or Mukesh Prasad (mukesh.prasad@uts.edu.au).
+**AvatarHQ** is a lightweight dataset structured as follows  
+
+| Folder | Contents | Format |
+|--------|----------|--------|
+| `avatar/` | 200 hand-drawn portraits | PNG · 1024 × 1024 |
+| `realistic/` | Identity-matched CelebA-HQ reference photos | JPG |
+| `text/` | Concise English captions (one per image) | `.txt` |
+
+The dataset is released **for non-commercial research** under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0)**.  
+All accompanying code in this repository is **MIT-licensed**.  
+Using or modifying the data signifies acceptance of the CC terms; any commercial application requires written permission from the authors.
+
+> **Citation**  
+> Sui, Linjie & Prasad, Mukesh. *AvatarHQ: A High-Quality Hand-Drawn Avatar Dataset*, 2025.  
+> CC BY-NC-SA 4.0. <https://github.com/**\<user\>**/AvatarHQ>
+
+**Contact**  
+Linjie Sui — <linjie.sui-1@uts.edu.au>  
+Mukesh Prasad — <mukesh.prasad@uts.edu.au>
