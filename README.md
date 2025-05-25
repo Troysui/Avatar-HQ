@@ -16,6 +16,6 @@ Using or modifying the data signifies acceptance of the CC terms; any commercial
 
 
 **Contact**  
-Linjie Sui — <linjie.sui-1@student.uts.edu.au>  
-Mukesh Prasad — <mukesh.prasad@uts.edu.au>
-Ali Braytee — <ali.braytee@uts.edu.au>
+- **Linjie Sui** — linjie.sui-1@uts.edu.au / 1067638557@qq.com  
+- **Mukesh Prasad** — mukesh.prasad@uts.edu.au  
+- **Ali Braytee** — ali.braytee@uts.edu.au
