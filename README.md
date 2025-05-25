@@ -1,2 +1,18 @@
-# Avatar-HQ
-AvatarHQ contains three directories—avatar/ (200 high-resolution hand-drawn portraits, 1024 × 1024 PNG), realistic/ (the identity-matched CelebA-HQ reference photos), and text/ (plain-text files whose names mirror the image IDs and whose contents are concise English descriptions of the corresponding faces). Clone the repository, iterate over paired files by matching the shared filename stem (e.g., 0001.png, 0001.txt), and you can immediately run any avatar-generation, style-transfer, or text-to-image experiment without extra parsing or JSON conversion; a minimal Python example is import pathlib, random, PIL.Image as Image; root=pathlib.Path('avatar'); name=random.choice([p.stem for p in root.glob('*.png')]); print(open(f'text/{name}.txt').read().strip()); Image.open(root/f'{name}.png').show(). The dataset is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0), restricting use to non-commercial research, while all accompanying code is MIT-licensed; using the data signifies acceptance of the CC terms, and any commercial application requires written permission from the authors. If AvatarHQ helps your work, please cite it as @dataset{avatarhq2025, author={Sui, Linjie and Prasad, Mukesh}, title={AvatarHQ: A High-Quality Hand-Drawn Avatar Dataset}, year={2025}, url={https://github.com/<user>/AvatarHQ}, note={CC BY-NC-SA 4.0}}. Direct questions, issues, or collaboration proposals to Linjie Sui (linjie.sui-1@uts.edu.au) or Mukesh Prasad (mukesh.prasad@uts.edu.au).
+Avatar-HQ
+=========
+
+AvatarHQ is a lightweight dataset organised into three folders:
+
+* **avatar/** – 200 hand-drawn portraits (PNG, 1024 × 1024)  
+* **realistic/** – the identity-matched CelebA-HQ reference photos  
+* **text/** – plain-text captions; each file shares its stem with the corresponding images (`0001.txt`, `0001.png`, …)
+
+Clone the repository and you can iterate over paired samples straight away—no JSON parsing needed.  
+A one-liner demonstration:
+
+```python
+import pathlib, random, PIL.Image as Image
+root = pathlib.Path('avatar')
+name = random.choice([p.stem for p in root.glob('*.png')])
+print(open(f'text/{name}.txt').read().strip())
+Image.open(root / f'{name}.png').show()
