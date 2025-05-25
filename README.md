@@ -1,18 +1,4 @@
 Avatar-HQ
 =========
 
-AvatarHQ is a lightweight dataset organised into three folders:
-
-* **avatar/** – 200 hand-drawn portraits (PNG, 1024 × 1024)  
-* **realistic/** – the identity-matched CelebA-HQ reference photos  
-* **text/** – plain-text captions; each file shares its stem with the corresponding images (`0001.txt`, `0001.png`, …)
-
-Clone the repository and you can iterate over paired samples straight away—no JSON parsing needed.  
-A one-liner demonstration:
-
-```python
-import pathlib, random, PIL.Image as Image
-root = pathlib.Path('avatar')
-name = random.choice([p.stem for p in root.glob('*.png')])
-print(open(f'text/{name}.txt').read().strip())
-Image.open(root / f'{name}.png').show()
+AvatarHQ is a lightweight dataset comprising three directories: `avatar/`, containing 200 hand-drawn PNG portraits at 1024 × 1024 resolution; `realistic/`, holding the identity-matched CelebA-HQ reference photographs; and `text/`, supplying concise English descriptions in plain-text files that share filename stems with the images (for example, 0001.png and 0001.txt). The collection is released for non-commercial research under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0), while any auxiliary code in this repository is MIT-licensed—using the data implies acceptance of the CC terms, and commercial use requires written permission from the authors. If AvatarHQ supports your work, please cite it as “Sui, Linjie and Prasad, Mukesh. *AvatarHQ: A High-Quality Hand-Drawn Avatar Dataset*, 2025, CC BY-NC-SA 4.0, https://github.com/〈user〉/AvatarHQ”. Direct questions, issues or collaboration proposals to Linjie Sui (linjie.sui-1@uts.edu.au) or Mukesh Prasad (mukesh.prasad@uts.edu.au).
