@@ -1,2 +1,21 @@
 # Avatar-HQ
-AvatarHQ is a collection of 200 hand-drawn avatar portraits at 1024 × 1024 resolution, each identity-matched to a real face from CelebA-HQ and accompanied by a rich textual caption stored in captions.json; the repository also includes five-fold train/validation splits so you can plug the data directly into style-transfer, text-to-image or cross-modal retrieval experiments. After cloning the repo, simply drop the images/ directory and the caption file into the project root and you can iterate over samples immediately—for example, run python - <<'PY'\nimport json, random, pathlib, PIL.Image as Image\nroot = pathlib.Path('images')\nimg = random.choice(list(root.glob('*.png')))\nprint(json.loads(open('captions.json').read())[img.stem])\nImage.open(img).show()\nPY to display a random avatar and its description. The dataset itself is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0), restricting use to non-commercial research, while all accompanying code is MIT-licensed; using or modifying the data signifies acceptance of the CC terms and any commercial application requires written permission from the authors. If AvatarHQ supports your work, please cite it as @dataset{avatarhq2025, author={Sui, Linjie and Prasad, Mukesh}, title={AvatarHQ: A High-Quality Hand-Drawn Avatar Dataset}, year={2025}, url={https://github.com/<user>/AvatarHQ}, note={CC BY-NC-SA 4.0}}. Questions, issues and pull requests are welcome—contact Linjie Sui (linjie.sui-1@uts.edu.au) or Mukesh Prasad (mukesh.prasad@uts.edu.au) for support or collaboration.
+
+**AvatarHQ** is a lightweight dataset structured as follows  
+
+| Folder | Contents | Format |
+|--------|----------|--------|
+| `avatar/` | 200 hand-drawn portraits | jpg · 2048 × 2048 |
+| `realistic/` | Identity-matched CelebA-HQ reference photos | JPG |
+| `text/` | Concise English captions (one per image) | `.txt` |
+
+The dataset is released **for non-commercial research** under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0)**.  
+All accompanying code in this repository is **MIT-licensed**.  
+Using or modifying the data signifies acceptance of the CC terms; any commercial application requires written permission from the authors.
+
+> **Citation**  
+
+
+**Contact**  
+- **Linjie Sui** — linjie.sui-1@uts.edu.au / 1067638557@qq.com  
+- **Mukesh Prasad** — mukesh.prasad@uts.edu.au  
+- **Ali Braytee** — ali.braytee@uts.edu.au
